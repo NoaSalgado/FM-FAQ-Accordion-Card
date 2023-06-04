@@ -28,19 +28,39 @@
   <body>
     <main class="main">
       <section class="faq">
-        <img
-          class="faq-image"
-          src="./images/illustration-woman-online-mobile.svg"
-          alt="SVG image which illustrating a woman surfing the internet on a big screen"
-        />
-        <img
-          class="faq-image-shadow"
-          src="./images/bg-pattern-mobile.svg"
-          alt=""
-        />
-        <h1 class="main-heading">FAQ</h1>
+        <picture>
+          <source
+            srcset="./images/illustration-woman-online-desktop.svg"
+            media="(min-width: 1024px)"
+          />
+          <img
+            class="faq-image"
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="SVG image which illustrating a woman surfing the internet on a big screen"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="./images/bg-pattern-desktop.svg"
+            media="(min-width: 1024px)"
+          />
+          <img
+            class="faq-image-shadow"
+            src="./images/bg-pattern-mobile.svg"
+            alt=""
+          />
+        </picture>
+
+        <picture>
+          <source
+            srcset="./images/illustration-box-desktop.svg"
+            media="(min-width: 1024px)"
+          />
+          <img class="faq-image-box" src="" alt="" />
+        </picture>
 
         <div class="accordion">
+          <h1 class="main-heading">FAQ</h1>
           <div class="accordion-item">
             <button class="accordion-question" aria-expanded="false">
               <span>How many team members can I invite?</span>
